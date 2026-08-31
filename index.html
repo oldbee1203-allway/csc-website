@@ -32,7 +32,7 @@ a{color:inherit; text-decoration:none;}
 .wrap{max-width:1100px; margin:0 auto; padding:0 32px;}
 
 /* NAV */
-nav{position:sticky; top:0; z-index:50; background:rgba(11,22,34,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--navy-line);}
+nav{position:sticky; top:0; z-index:50; background:rgba(11,22,34,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--brass); box-shadow:0 1px 0 rgba(176,141,87,.15);}
 nav .wrap{display:flex; align-items:center; justify-content:space-between; height:72px;}
 .brand-mark{color:#F6F4EF; font-family:'Noto Serif TC',serif; font-size:19px; font-weight:700; letter-spacing:.08em;}
 .brand-mark small{display:block; font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:11px; letter-spacing:.15em; color:var(--brass-soft); margin-top:2px;}
@@ -102,7 +102,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; heigh
 .about-seam{position:absolute; top:14px; left:50%; transform:translateX(-50%); width:44px; height:1px; background:var(--brass);}
 .about-seam::before{content:""; position:absolute; left:50%; top:-4px; transform:translateX(-50%) rotate(45deg); width:8px; height:8px; border:1px solid var(--brass); background:var(--navy-deep);}
 .about-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:center;}
-.about-visual{border:1px solid var(--navy-line); border-radius:4px; padding:40px; position:relative;}
+.about-visual{border:1px solid var(--brass-soft); border-radius:4px; padding:40px; position:relative;}
 .about-visual .big-year{font-family:'Noto Serif TC',serif; font-size:72px; color:var(--brass-soft); line-height:1;}
 .about-visual .since{font-size:13px; letter-spacing:.2em; color:#8FA0AE; margin-top:10px;}
 .about-visual .divider{width:40px; height:1px; background:var(--brass); margin:28px 0;}
@@ -115,7 +115,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; heigh
 
 /* SERVICES */
 .services{padding:100px 0;}
-.service-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--paper-line); border:1px solid var(--paper-line);}
+.service-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--paper-line); border:1px solid var(--paper-line); border-top:2px solid var(--brass);}
 .service-card{background:var(--paper); padding:36px 22px; text-align:center; transition:transform .25s ease, box-shadow .25s ease, background .25s ease;}
 .service-card:hover{transform:translateY(-5px); box-shadow:0 14px 28px -10px rgba(11,22,34,.22); background:#fff; position:relative; z-index:2;}
 .service-card .idx{font-family:'Noto Serif TC',serif; color:var(--brass); font-size:48px; font-weight:700; margin-bottom:12px; line-height:1;}
@@ -131,7 +131,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; heigh
 .contact-info h2::after{content:""; position:absolute; left:0; bottom:0; width:36px; height:1px; background:var(--brass);}
 .contact-info p{color:#B7C2CC; font-size:14px; margin-bottom:28px;}
 .contact-info .line{font-size:13px; color:#9FB0C3; margin-bottom:8px;}
-.contact-tel-fax{display:flex; gap:32px; margin-top:24px; padding-top:24px; border-top:1px solid var(--navy-line);}
+.contact-tel-fax{display:flex; gap:32px; margin-top:24px; padding-top:24px; border-top:1px solid var(--brass-soft);}
 .contact-tel-fax .tel-label{display:block; font-size:11px; letter-spacing:.25em; color:var(--brass); margin-bottom:6px;}
 .contact-tel-fax .tel-num{font-family:'Noto Serif TC',serif; font-size:19px; letter-spacing:.03em; color:#F6F4EF;}
 .form{display:flex; flex-direction:column; gap:14px;}
@@ -143,7 +143,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; heigh
 
 /* PROMO CAROUSEL */
 .promo{background:var(--paper); padding:0 0 100px;}
-.promo-stage{position:relative; max-width:640px; margin:0 auto; border:1px solid var(--brass-soft); border-radius:4px; padding:8px; background:var(--navy-deep); overflow:hidden;}
+.promo-stage{position:relative; max-width:900px; margin:0 auto; border:1px solid var(--brass-soft); border-radius:4px; padding:10px; background:var(--navy-deep); overflow:hidden;}
 .promo-slide{display:none; background:var(--navy-deep);}
 .promo-slide.active{display:block;}
 .promo-slide img{width:100%; aspect-ratio:2.1/1; object-fit:cover; object-position:center; display:block; border-radius:2px; background:var(--navy-deep);}
