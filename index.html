@@ -678,6 +678,18 @@ footer{background:var(--navy-deep); color:#7E8E9A; text-align:center; padding:28
   }, {threshold:0.4});
   io2.observe(document.getElementById('stats-wrap'));
 })();
+
+// Shuffle brand wall order on every page load
+(function(){
+  var grid = document.querySelector('.brand-grid');
+  if(!grid) return;
+  var cards = Array.prototype.slice.call(grid.children);
+  for (var i = cards.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+  }
+  cards.forEach(function(card){ grid.appendChild(card); });
+})();
 </script>
 </body>
 </html>
